@@ -55,6 +55,7 @@ EXPECTED_GAMES = frozenset([
     "dots_and_boxes",
     "dou_dizhu",
     "efg_game",
+    "englishman",
     "euchre",
     "first_sealed_auction",
     "gin_rummy",

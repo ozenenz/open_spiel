@@ -70,6 +70,8 @@ set(GAME_SOURCES
   efg_game/efg_game.h
   efg_game/efg_game_data.cc
   efg_game/efg_game_data.h
+  englishman/englishman.cc
+  englishman/englishman.h
   euchre/euchre.cc
   euchre/euchre.h
   first_sealed_auction/first_sealed_auction.cc
@@ -415,6 +417,10 @@ add_test(dou_dizhu_utils_test dou_dizhu_utils_test)
 add_executable(efg_game_test efg_game/efg_game_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)
 add_test(efg_game_test efg_game_test)
+
+add_executable(englishman_test englishman/englishman_test.cc ${OPEN_SPIEL_OBJECTS}
+               $<TARGET_OBJECTS:tests>)
+add_test(englishman_test englishman_test)
 
 add_executable(euchre_test euchre/euchre_test.cc ${OPEN_SPIEL_OBJECTS}
                $<TARGET_OBJECTS:tests>)
